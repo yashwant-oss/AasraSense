@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mental Health Awareness</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff8f0;
+            color: #172033;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(90deg, #ff7a00, #ff9d3f);
+            color: white;
+            text-align: center;
+            padding: 42px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 23px;
+        }
+
+        /* MAIN CONTAINER */
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        /* INTRODUCTION */
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            color: #e85d04;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 21px;
+            line-height: 1.6;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 38px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 28px 32px;
+        }
+
+        .card h3 {
+            color: #e85d04;
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        .card p {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        /* HELP / DIAGNOSE / MENTAL SUPPORT */
+        .support-options {
+            margin-top: 40px;
+            background: #fff0df;
+            border-radius: 12px;
+            padding: 18px 25px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .support-item {
+            text-align: center;
+            padding: 15px;
+            border-right: 1px solid #e8c9aa;
+            text-decoration: none;
+            color: #172033;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .support-item:hover {
+            transform: translateY(-3px);
+            background: #ffe6cc;
+            border-radius: 10px;
+        }
+
+        .support-item:last-child {
+            border-right: none;
+        }
+
+        .support-item h3 {
+            color: #e85d04;
+            font-size: 22px;
+            margin-bottom: 7px;
+        }
+
+        .support-item p {
+            font-size: 15px;
+        }
+
+        /* CONTINUE BUTTON */
+        .continue-section {
+            text-align: center;
+            margin-top: 22px;
+        }
+
+        .continue-button {
+            display: inline-block;
+            background: #e85d04;
+            color: white;
+            text-decoration: none;
+            padding: 15px 65px;
+            border-radius: 30px;
+            font-size: 21px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+            transition: 0.3s;
+        }
+
+        .continue-button:hover {
+            background: #c94e00;
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            background: #e85d04;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            .intro h2 {
+                font-size: 30px;
+            }
+
+            .intro p {
+                font-size: 17px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .card img {
+                height: 230px;
+            }
+
+            .card h3 {
+                font-size: 25px;
+            }
+
+            .card p {
+                font-size: 17px;
+            }
+
+            .support-options {
+                grid-template-columns: 1fr;
+            }
+
+            .support-item {
+                border-right: none;
+                border-bottom: 1px solid #e8c9aa;
+            }
+
+            .support-item:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>Mental Health Awareness</h1>
+
+        <p>
+            Understanding mental health is an important part of a healthy life.
+        </p>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- WHAT IS MENTAL HEALTH -->
+        <section class="intro">
+
+            <h2>What is Mental Health?</h2>
+
+            <p>
+                Mental health is an important part of our overall well-being.
+                It affects how we think, feel, learn, communicate and deal
+                with everyday challenges. Taking care of our mental health
+                can help us manage stress, maintain relationships and
+                handle difficult situations in a healthier way.
+            </p>
+
+        </section>
+
+
+        <!-- FOUR CARDS -->
+        <section class="cards">
+
+            <!-- CARD 1 -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=900&q=80"
+                    alt="Mental Stress">
+
+                <div class="card-content">
+
+                    <h3>1. Mental Stress</h3>
+
+                    <p>
+                        Mental stress can occur when we feel that the demands
+                        placed on us are difficult to manage. Students may
+                        experience stress because of exams, assignments,
+                        academic pressure, deadlines or expectations.
+                        Recognizing stress early can help a person take
+                        healthy steps to manage it.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
+                    alt="Emotional Well-being">
+
+                <div class="card-content">
+
+                    <h3>2. Emotional Well-being</h3>
+
+                    <p>
+                        Emotional well-being means being able to understand
+                        and express our feelings in healthy ways. Talking to
+                        someone we trust, spending time with supportive people
+                        and taking care of ourselves can help us manage
+                        difficult emotions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519947486511-46149fa0a254?auto=format&fit=crop&w=900&q=80"
+                    alt="Sleep and Rest">
+
+                <div class="card-content">
+
+                    <h3>3. Sleep &amp; Rest</h3>
+
+                    <p>
+                        Sleep and rest are important for concentration,
+                        learning, mood and everyday functioning. Maintaining
+                        a regular sleep routine and giving yourself enough
+                        time to rest can support good mental well-being.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
+                    alt="Social Support">
+
+                <div class="card-content">
+
+                    <h3>4. Social Support</h3>
+
+                    <p>
+                        Having supportive people around us can make challenges
+                        easier to handle. Friends, family members and trusted
+                        adults can listen, encourage us and provide support
+                        when we need it.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HELP / DIAGNOSE / MENTAL SUPPORT -->
+        <section class="support-options">
+
+            <!-- HELP -->
+            <a href="help.html" class="support-item">
+
+                <h3>🤝 Help</h3>
+
+                <p>
+                    Get the support you need.
+                </p>
+
+            </a>
+
+
+            <!-- DIAGNOSE -->
+            <a href="diagnose.html" class="support-item">
+
+                <h3>📋 Diagnose</h3>
+
+                <p>
+                    Understand your mental health.
+                </p>
+
+            </a>
+
+
+            <!-- MENTAL SUPPORT -->
+            <a href="mentalsupport.html" class="support-item">
+
+                <h3>🧠 Mental Support</h3>
+
+                <p>
+                    You are not alone.
+                </p>
+
+            </a>
+
+        </section>
+
+
+        <!-- CONTINUE BUTTON -->
+        <div class="continue-section">
+
+            <a href="yashwant.html" class="continue-button">
+                Continue →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © 2026 Mental Health Awareness | College Project
+
+    </footer>
+
+</body>
+</html>
